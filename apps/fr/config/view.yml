@@ -1,0 +1,34 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:         大阪 梅田 の熟女風俗エステ ”美熟で痴的なご奉仕奥さん”| 大阪 熟女風俗
+    description:  当店は大阪 梅田 のエロエロ美熟女風俗エステ店です。四十路の艶やかな美貌と裸体…艶姿がエロすぎる痴魔女な奥さんの激エロマッサージプレイを心ゆくまでお楽しみください。風俗遊びのプロの貴方や初心者中級者の貴方にも、熟女ならではの濃厚サービスできっとご満足頂けることでしょう。安心のパネル見学無料。お気軽にご来店ください。11:00～LAST迄受付。ご予約は06-6130-8535まで。お電話お待ちしております。
+    keywords:     大阪,梅田,熟女,風俗,エステ
+    #language:     en
+    robots:       index, follow
+    google-site-verification:  8G-5gHcaAfAiOcXZMHE7ask41e7mi0973N-wa10CouA
+
+  stylesheets:    [main.css: { media: all }]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+  components:
+    menu:         [top, menu]
+    menu_tani9:    [top, menutani9]
+    menu_juso:    [top, menujuso]
+    menu_ms:      [top, menums]
+    menu_nb:      [top, menunb]
+    menu_mob:     [top, menumob]
+    menu_mob_tani9: [top, menumobtani9]
+    menu_mob_juso: [top, menumobjuso]
+    menu_mob_ms:  [top, menumobms]
+    menu_mob_nb:  [top, menumobnb]
+    menu_sb:      [top, menusb]
+    menu_dc:      [top, menudc]

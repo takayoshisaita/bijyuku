@@ -1,0 +1,46 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Event
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          event
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:          {label: No.}
+        shop:        {label: 店舗}
+        shop_id:     {label: 店舗}
+        disp_order:  {label: 表示順<br />（大きい順）}
+        pic:         {label: 画像}
+        title:       {label: イベントタイトル}
+        comment:     {label: 説明文}
+        show_in_pricepage: {label: 料金表<br />ページに<br />表示する}
+        is_active:   {label: 公開}
+        created_at:  {label: 作成日}
+        updated_at:  {label: 更新日}
+      list:
+        title: イベント一覧
+        display: [id, _shop, disp_order, =title, _pic, _comment, show_in_pricepage, is_active, _updated_at]
+        sort:    [shop_id, asc, disp_order, desc]
+      filter:
+        display: [shop_id, is_active]
+      form:
+        actions:
+          _delete:
+            label:  削除
+          _list:
+            label:  一覧へ戻る
+          _save:
+            label:  保存
+      edit:
+        title: イベント編集
+      new:
+        title: 新規イベント追加
+      confirm: ~

@@ -1,0 +1,61 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Companion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Companion
+    plural:                Companions
+    route_prefix:          companion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:          {label: No.}
+        shop:        {label: 店舗}
+        shop_id:     {label: 店舗}
+        name:        {label: 名前}
+        rank:        {label: ランク}
+        pickup_id:   {label: ピックアップNo.<br>（大きい順に表示）}
+        list_order:  {label: 表示順<br>（大きい順に表示）}
+        age:         {label: 年齢}
+        t:           {label: T}
+        b:           {label: B}
+        cup:         {label: カップ}
+        w:           {label: W}
+        h:           {label: H}
+        pic1:        {label: 画像１}
+        pic2:        {label: 画像２}
+        pic3:        {label: 画像３}
+        pic4:        {label: 画像４}
+        pic5:        {label: 画像５}
+        item1:       {label: 講習回数}
+        item2:       {label: 趣味}
+        item3:       {label: 質問１}
+        item4:       {label: 質問２}
+        item5:       {label: 質問３}
+        item6:       {label: 質問４}
+        item7:       {label: 質問５}
+        comment:        {label: 本人コメント}
+        shopcomment:    {label: 店舗コメント}
+        onelinecomment: {label: 一行コメント}
+        timeup:         {label: ご案内可能時刻}
+        weeks_list:     {label: ﾚｷﾞｭﾗｰ出勤曜日}
+        intime:         {label: ﾚｷﾞｭﾗｰ入り時刻}
+        outtime:        {label: ﾚｷﾞｭﾗｰ上がり時刻}
+        is_active:      {label: 有効}
+        icons_list:     {label: 表示アイコン}
+      list:
+        title: コンパニオン一覧
+        display:  [id, _shop, =name, _rank, pickup_id, list_order, age, _pic1, _pic2, _pic3, _pic4, _pic5, timeup, is_active]
+      filter:
+        display:  [shop_id, is_active]
+      form:    ~
+      edit:
+        title: コンパニオン編集
+      new:
+        title: 新規コンパニオン追加
+      confirm: ~

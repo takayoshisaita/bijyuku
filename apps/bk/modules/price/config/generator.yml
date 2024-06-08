@@ -1,0 +1,92 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Price
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          price
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:         {label: -}
+        shop:       {label: 店舗}
+        shop_id:    {label: 店舗}
+        pricecategory: {label: ｶﾃｺﾞﾘｰ}
+        category_id: {label: ｶﾃｺﾞﾘｰ}
+        nyuukaikin: {label: 入会金}
+        shimeiryou: {label: 指名料}
+        netshimei:  {label: ﾈｯﾄ指名料}
+        title_col1: {label: 列1ﾀｲﾄﾙ}
+        title_col2: {label: 列2ﾀｲﾄﾙ}
+        title_col3: {label: 列3ﾀｲﾄﾙ}
+        title_col4: {label: 列4ﾀｲﾄﾙ}
+        title_col5: {label: 列5ﾀｲﾄﾙ}
+        title_row1: {label: 行1ﾀｲﾄﾙ}
+        title_row2: {label: 行2ﾀｲﾄﾙ}
+        title_row3: {label: 行3ﾀｲﾄﾙ}
+        title_row4: {label: 行4ﾀｲﾄﾙ}
+        title_row5: {label: 行5ﾀｲﾄﾙ}
+        row1col1:   {label: 行1列1}
+        row1col2:   {label: 行1列2}
+        row1col3:   {label: 行1列3}
+        row1col4:   {label: 行1列4}
+        row1col5:   {label: 行1列5}
+        row2col1:   {label: 行2列1}
+        row2col2:   {label: 行2列2}
+        row2col3:   {label: 行2列3}
+        row2col4:   {label: 行2列4}
+        row2col5:   {label: 行2列5}
+        row3col1:   {label: 行3列1}
+        row3col2:   {label: 行3列2}
+        row3col3:   {label: 行3列3}
+        row3col4:   {label: 行3列4}
+        row3col5:   {label: 行3列5}
+        row4col1:   {label: 行4列1}
+        row4col2:   {label: 行4列2}
+        row4col3:   {label: 行4列3}
+        row4col4:   {label: 行4列4}
+        row4col5:   {label: 行4列5}
+        row5col1:   {label: 行5列1}
+        row5col2:   {label: 行5列2}
+        row5col3:   {label: 行5列3}
+        row5col4:   {label: 行5列4}
+        row5col5:   {label: 行5列5}
+        entyou:     {label: 延長単位}
+        entyou_kakaku:  {label: 延長料金}
+        option1_title:  {label: ｵﾌﾟｼｮﾝ1}
+        option2_title:  {label: ｵﾌﾟｼｮﾝ2}
+        option3_title:  {label: ｵﾌﾟｼｮﾝ3}
+        option4_title:  {label: ｵﾌﾟｼｮﾝ4}
+        option5_title:  {label: ｵﾌﾟｼｮﾝ5}
+        option6_title:  {label: ｵﾌﾟｼｮﾝ6}
+        option7_title:  {label: ｵﾌﾟｼｮﾝ7}
+        option8_title:  {label: ｵﾌﾟｼｮﾝ8}
+        option9_title:  {label: ｵﾌﾟｼｮﾝ9}
+        option10_title: {label: ｵﾌﾟｼｮﾝ10}
+        option1_price:  {label: ｵﾌﾟｼｮﾝ1料金}
+        option2_price:  {label: ｵﾌﾟｼｮﾝ2料金}
+        option3_price:  {label: ｵﾌﾟｼｮﾝ3料金}
+        option4_price:  {label: ｵﾌﾟｼｮﾝ4料金}
+        option5_price:  {label: ｵﾌﾟｼｮﾝ5料金}
+        option6_price:  {label: ｵﾌﾟｼｮﾝ6料金}
+        option7_price:  {label: ｵﾌﾟｼｮﾝ7料金}
+        option8_price:  {label: ｵﾌﾟｼｮﾝ8料金}
+        option9_price:  {label: ｵﾌﾟｼｮﾝ9料金}
+        option10_price: {label: ｵﾌﾟｼｮﾝ10料金}
+      list:
+        title:  料金表一覧
+        display: [id, _shop, _pricecategory, nyuukaikin, shimeiryou, netshimei, title_col1, title_col2, title_col3, title_col4, title_col5, title_row1, title_row2, title_row3, title_row4, title_row5, row1col1, row1col2, row1col3, row1col4, row1col5, row2col1, row2col2, row2col3, row2col4, row2col5, row3col1, row3col2, row3col3, row3col4, row3col5, row4col1, row4col2, row4col3, row4col4, row4col5, row5col1, row5col2, row5col3, row5col4, row5col5, entyou, entyou_kakaku, option1_title, option2_title, option3_title, option4_title, option5_title, option6_title, option7_title, option8_title, option9_title, option10_title, option1_price, option2_price, option3_price]
+      filter:
+        display: [id]
+      form:    ~
+      edit:
+        title:  料金表編集
+      new:
+        title:  料金表追加
+      confirm: ~

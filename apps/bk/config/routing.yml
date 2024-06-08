@@ -1,0 +1,170 @@
+price_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PriceCategory
+    module:               pricecategory
+    prefix_path:          /pricecategory
+    column:               id
+    with_wildcard_routes: true
+
+icon_icon:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Icon
+    module:               icon
+    prefix_path:          /icon
+    column:               id
+    with_wildcard_routes: true
+
+topic_top:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Topic
+    module:               top
+    prefix_path:          /top
+    column:               id
+    with_wildcard_routes: true
+
+mail_mag:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                MailMag
+    module:               mail_mag
+    prefix_path:          /mail_mag
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: true
+map:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Map
+    module:               map
+    prefix_path:          /map
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+link_banner:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                LinkBanner
+    module:               link_banner
+    prefix_path:          /link_banner
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+inquiry:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Inquiry
+    module:               inquiry
+    prefix_path:          /inquiry
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+icon:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Icon
+    module:               icon
+    prefix_path:          /icon
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+rank:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Rank
+    module:               rank
+    prefix_path:          /rank
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+price:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Price
+    module:               price
+    prefix_path:          /price
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+schedule:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Schedule
+    module:               schedule
+    prefix_path:          /schedule
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+companion:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Companion
+    module:               companion
+    prefix_path:          /companion
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+info:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Info
+    module:               info
+    prefix_path:          /info
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+event:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Event
+    module:               event
+    prefix_path:          /event
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+topic_category:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                TopicCategory
+    module:               topic_category
+    prefix_path:          /topic_category
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: true
+topic:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Topic
+    module:               topic
+    prefix_path:          /topic
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+shop:
+  class: sfDoctrineRouteCollectionPlus
+  options:
+    model:                Shop
+    module:               shop
+    prefix_path:          /shop
+    column:               id
+    with_wildcard_routes: true
+    with_separated_confirm: false
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: shop, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Map
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          map
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:        {label: No.}
+        shop:      {label: 店舗}
+        shop_id:   {label: 店舗}
+        name:      {label: 名称}
+        comment:   {label: コメント}
+        pic:       {label: 画像}
+        source:    {label: 埋め込み用コード}
+        sourcemob: {label: 携帯用コード}
+      list:
+        title: 待ち合わせマップ一覧
+        display: [id, _shop, name, _pic]
+      filter:
+        display: [shop_id]
+      form:    ~
+      edit:
+        title: 待ち合わせマップ編集
+      new:
+        title: 新規待ち合わせマップ追加
+      confirm: ~

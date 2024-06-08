@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           TopicCategory
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          topic_category
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id: {label: No.}
+        name: {label: カテゴリー名}
+        img_tag: {label: 画像}
+      list:
+        title: トピックカテゴリー一覧
+        display: [id, _img_tag, name]
+      filter:  ~
+      form:    ~
+      edit:
+        title: トピックカテゴリー編集
+      new:
+        title: トピックカテゴリー追加
+      confirm: ~

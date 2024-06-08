@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PriceCategory
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          price_category
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:   {label: No.}
+        name: {label: カテゴリー名}
+        pic:  {label: 画像}
+      list:
+        title:   料金表カテゴリー一覧
+        display: [id, _pic, name]
+      filter:  ~
+      form:    ~
+      edit:
+        title: 料金表カテゴリー編集
+      new:
+        title: 料金表カテゴリー追加
+      confirm: ~

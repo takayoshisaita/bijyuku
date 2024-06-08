@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Shop
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          shop
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:       {label: ID}
+        name:     {label: 店舗名}
+        username: {label: Username}
+        password: {label: Password}
+        telno:    {label: 電話}
+        email:    {label: E-メール}
+        url:      {label: URL}
+        mobile_url: {label: 携帯ページURL}
+        comment:  {label: コメント}
+        pic:      {label: 画像}
+      list:
+        title:  店舗一覧
+        display: [id, =name, username, password, telno, email, url]
+      filter:
+        display: [name]
+      form:    ~
+      edit:
+        title:  店舗詳細編集
+      new:
+        title:  店舗追加
+      confirm: ~

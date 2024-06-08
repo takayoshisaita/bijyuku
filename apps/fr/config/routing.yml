@@ -1,0 +1,52 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+tani9_homepage:
+  url:   /tani9
+  param: { module: default, action: index, shop: 2 }
+
+tani9_index:
+  url:   /tani9/:module
+  param: { action: index, shop: 2 }
+
+tani9_default:
+  url:   /tani9/:module/:action/*
+  param: { shop: 2 }
+
+nb_homepage:
+  url:   /nb
+  param: { module: default, action: index, shop: 5 }
+
+nb_index:
+  url:   /nb/:module
+  param: { action: index, shop: 5 }
+
+nb_default:
+  url:   /nb/:module/:action/*
+  param: { shop: 5 }
+
+juso_homepage:
+  url:   /juso
+  param: { module: default, action: index, shop: 3 }
+
+juso_index:
+  url:   /juso/:module
+  param: { action: index, shop: 3 }
+
+juso_default:
+  url:   /juso/:module/:action/*
+  param: { shop: 3 }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

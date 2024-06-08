@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Info
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          info
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:           {label: No.}
+        title:        {label: タイトル}
+        comment:      {label: 本文}
+        pic:          {label: 画像}
+        is_published: {label: 公開}
+        created_at:   {label: 作成日}
+        updated_at:   {label: 更新日}
+      list:
+        title: お知らせ一覧
+        display: [id, title, comment, _pic, is_published, created_at, updated_at]
+      filter:  ~
+      form:    ~
+      edit:
+        title: お知らせの編集
+      new:
+        title: お知らせの新規作成

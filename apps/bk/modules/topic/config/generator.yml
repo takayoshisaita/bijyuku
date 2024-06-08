@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Topic
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          topic
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id:           {label: No.}
+        shop:         {label: 店舗}
+        shop_id:      {label: 店舗}
+        title:        {label: タイトル}
+        comment:      {label: コメント}
+        category:     {label: カテゴリー}
+        category_id:  {label: カテゴリー}
+        pic:          {label: 画像}
+        is_published: {label: 公開}
+        created_at:   {label: 作成日}
+        updated_at:   {label: 更新日}
+      list:
+        title: トピック一覧（2011.12.26 更新日ではなく作成日の新しい記事から順に表示するように変更しました。）
+        display: [=id, _shop, =title, _pic, _category, is_published, _created_at]
+        sort:    [created_at, desc]
+        batch_actions:
+          publish:    ~
+          suspend:    ~
+      filter:
+        display: [shop_id,is_published]
+      form:
+        actions:
+          _delete:
+            label:  削除
+          _list:
+            label:  一覧へ戻る
+          _save:
+            label:  保存して一覧へ戻る
+      edit:
+        title: トピック編集
+      new:
+        title: 新規トピック作成
+      confirm: ~

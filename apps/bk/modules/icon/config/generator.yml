@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Icon
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          icon_icon
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id: {label: No.}
+        name: {label: 名前}
+        pic: {label: 画像}
+      list:
+        title: コンパニオン用アイコン一覧
+        display: [id, _pic, name]
+      filter:  ~
+      form:    ~
+      edit:
+        title: コンパニオン用アイコン編集
+      new:
+        title: 新規コンパニオン用アイコン追加

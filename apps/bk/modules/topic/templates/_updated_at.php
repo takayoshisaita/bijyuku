@@ -1,0 +1,1 @@
+<?php echo date("Y/m/d G:i", strtotime($topic->getUpdatedAt())) ?>

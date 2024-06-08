@@ -1,0 +1,3 @@
+<h2>新規コンパニオン</h2>祝入店！来てくれてありがと…
+
+<?php include_partial('form', array('form' => $form)) ?>
