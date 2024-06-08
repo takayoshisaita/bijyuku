@@ -1,0 +1,190 @@
+#admin h1
+{
+	font-size: 22px;
+	font-weight: bolder;
+	border-bottom: 1px dotted;
+	margin-bottom: 10px;
+	text-indent: 0;
+	height: 100%;
+}
+
+#admin h2
+{
+	border-left: 20px solid #999999;
+	font-size: 18px;
+	font-weight: bolder;
+	margin-bottom: 4px;
+	padding: 0 0 0 10px;
+}
+
+#admin ul
+{
+	list-style-type: disc;
+    margin: 0 50px 10px 10px;
+	float: left;
+}
+
+#admin #admininfos
+{
+	width: 500px;
+	border: 6px solid #666666;
+	float: right;
+	margin-bottom: 16px;
+	margin-top: -100px;
+}
+
+#admin #admininfos h2
+{
+	background-color: #FF00FF;
+	color: #FFFFFF;
+	border: none;
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 6px;
+}
+
+#admin #admininfos #content
+{
+	width: 500px;
+	height: 500px;
+	overflow: scroll;
+}
+
+#admin #admininfos .admininfo
+{
+	margin: 4px;
+	padding: 6px;
+	border: 1px dotted #666666;
+}
+
+#admin #admininfos .admininfo .title
+{
+	border-left: 8px solid #999999;
+	border-bottom: 1px solid #999999;
+	padding-left: 10px;
+	font-weight: bolder;
+	margin-bottom: 8px;
+}
+
+#admin #admininfos .admininfo .title .datetime
+{
+	margin-right: 20px;
+	font-size: smaller;
+	font-weight: normal;
+}
+
+#admin #admininfos .admininfo img
+{
+	float: left;
+	margin: 0 4px 4px 0;
+	width: 120px;
+}
+
+#admin table
+{
+	border: 1px solid #999999;
+	border-collapse: collapse;
+}
+
+#admin table th
+{
+	background-color: #333333;
+    border: 1px solid #999999;
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#admin table td
+{
+	border: 1px solid #999999;
+}
+
+#admin table td.thumbnail img
+{
+	width: 120px;
+}
+
+#admin ul.checkbox_list li
+{
+	display: inline;
+}
+
+#admin #shop_admin
+{
+	float: left;
+	width: 456px;
+}
+
+#admin #shop_admin img#pic
+{
+	width: 140px;
+	border: 1px solid #666666;
+	float: left;
+	margin-right: 8px;
+}
+
+#admin #companions table td.name
+{
+	width: 100px;
+}
+
+#admin #companions table td.spec
+{
+	width: 140px;
+}
+
+#admin #login_bar
+{
+	background-color: #DDDDDD;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+#admin #content
+{
+    border-bottom: 1px dotted;
+    padding-bottom: 10px;
+}
+
+#compsche {
+	width: 1360px;
+}
+
+#compsche table#comp {
+	float: left;
+}
+
+#compsche #picbox {
+	float: left;
+}
+
+#compsche #picbox .pic {
+	float: left;
+	border: 1px solid #999999;
+}
+
+#compsche #picbox .pic ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#compsche #picbox .pic img {
+	width: 160px;	
+}
+
+/* é–ì‡ópä«óùâÊñ  */
+#sf_admin_content table td.sf_admin_list_td_img_tag img
+{
+	width: 120px;
+}
+
+#admin th.sf_admin_text a
+{
+	color: #DDDDDD;
+}
+
+#sf_admin_container th a
+{
+	color: #DDDDDD;
+}
